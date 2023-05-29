@@ -1,0 +1,35 @@
+.testResult {
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.success {
+  fill: green;
+  font-size: 1.5em;
+}
+
+.fail {
+  fill: red;
+  font-size: 1.5em;
+}
+
+.errorMessage {
+}
+
+.resultInfo {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+.koanViewer {
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.resultContainer {
+  padding-left: 2rem;
+}

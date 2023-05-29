@@ -1,0 +1,55 @@
+@import "../../styles/_breakpoints.scss";
+
+.mainHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-area: header;
+  padding: 1.3rem 2rem;
+  @include md {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+  }
+  color: var(--hippo-grey);
+  background: var(--hippo-dark-blue);
+  gap: 1rem;
+  @include md {
+    flex-direction: column;
+  }
+}
+
+.logo {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.6rem;
+  color: currentColor;
+  &:focus,
+  &:hover {
+    color: currentColor;
+    :global(#logo-underline) {
+      fill: currentColor;
+    }
+  }
+  &:not(:hover):not(:focus) {
+    text-decoration: none;
+  }
+}
+
+.logoImage {
+  position: relative;
+  top: 1px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  @include min-sm {
+    align-items: center;
+  }
+  @include sm {
+    flex-direction: column;
+  }
+}

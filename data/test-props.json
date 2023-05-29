@@ -1,0 +1,22 @@
+{
+  "1 - Hello World": {},
+  "2 - Passing Props": {
+    "profileName": "Hippopotatus",
+    "profileImage": "https://i.imgur.com/IhcM5yY.jpeg"
+  },
+  "3 - Conditional Rendering": {},
+  "4 - Rendering Lists": {
+    "bornAfter": 1917
+  },
+  "7 - Adding some style": {
+    "profileName": "Hippopotatus",
+    "profileImage": "https://i.imgur.com/IhcM5yY.jpeg"
+  },
+  "8 - Adding some style with scss": {
+    "profileName": "Hippopotatus",
+    "profileImage": "https://i.imgur.com/IhcM5yY.jpeg"
+  },
+  "9 - Responding to Events": {
+    "message": "Hippopotatus"
+  }
+}

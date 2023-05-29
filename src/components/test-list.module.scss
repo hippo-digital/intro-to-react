@@ -1,0 +1,14 @@
+.testList {
+  ul {
+    li {
+      list-style: none;
+      align-items: center;
+
+      h3 {
+        display: inline-block;
+        margin-right: 2em;
+        white-space: nowrap;
+      }
+    }
+  }
+}

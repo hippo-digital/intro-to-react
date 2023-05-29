@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Introduction to React
 
 ## Getting Started
 
-First, run the development server:
+Before you start make sure you have the following installed 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+* Node / NPM - [installation instructions](https://nodejs.org/en) 
+* Yarn - [installation instructions](https://yarnpkg.com/getting-started/install)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Once those are installed, checkout this repository (if you haven't already). 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    git clone https://github.com/hippo-digital/intro-to-react
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+once checked out navigate to the checked out directory by default this will be `intro-to-react`
 
-## Learn More
+    cd intro-to-react
 
-To learn more about Next.js, take a look at the following resources:
+once in the directory run
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    yarn install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+then 
 
-## Deploy on Vercel
+    yarn run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+if it is successful, you should see something like the following in the terminal
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    yarn run v1.22.19
+    $ next dev
+    - ready started server on 0.0.0.0:3000, url: http://localhost:3000
+    - warn You have enabled experimental feature (forceSwcTransforms) in next.config.js.
+    - warn Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use at your own risk.
+    - event compiled client and server successfully in 505 ms (306 modules)
+    - wait compiling...
+    - event compiled client and server successfully in 141 ms (306 modules)
+
+the warnings are OK, it is because we are using an experimental feature of Next.js. Once the script is running open a browser and navigate to http://localhost:3000
+
