@@ -1,5 +1,5 @@
 import {fireEvent, render} from '@testing-library/react'
-import IntroducingReducers from "../koans/16 - Introducing Reducers"
+import ScalingReducers from "../koans/18 - Scaling Reducers with context"
 import userEvent from "@testing-library/user-event";
 
 
@@ -9,9 +9,9 @@ const physicists = [
     {id: 4, name:"Enrico Fermi", birth:1901, death:1954},
     {id: 5, name:"Werner Heisenburg", birth:1901, death:1976 }
 ]
-describe('16 - Introducing Reducers', () => {
+describe('18 - Scaling Reducers with context', () => {
     test('Task 1', async () => {
-        const {getByText, getAllByText, getByRole} = render(<IntroducingReducers />)
+        const {getByText, getAllByText, getByRole} = render(<ScalingReducers />)
 
         const deleteButton = getAllByText("Delete" as any)
         fireEvent.click(deleteButton[0])

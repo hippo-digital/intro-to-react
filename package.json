@@ -25,7 +25,8 @@
     "react-error-boundary": "^4.0.7",
     "react-icons": "^4.8.0",
     "sass": "^1.62.1",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "whatwg-fetch": "^3.6.2"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.21.5",

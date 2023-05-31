@@ -15,6 +15,8 @@ import SharingState from "./14 - Sharing state"
 import PositionState from "./15 - Understanding Position and State"
 import IntroducingReducers from "./16 - Introducing Reducers"
 import IntroducingContext from "./17 - Introducing Context"
+import ScalingReducers from "./18 - Scaling Reducers with context"
+import IntroducingUseEffect from "./19 - Introducing useEffect"
 
 let Components = {}
 
@@ -35,5 +37,7 @@ Components['14 - Sharing state'] = (props) => <SharingState {...props} />
 Components['15 - Understanding Position and State'] = (props) => <PositionState {...props} />
 Components['16 - Introducing Reducers'] = (props) => <IntroducingReducers {...props} />
 Components['17 - Introducing Context'] = (props) => <IntroducingContext {...props} />
+Components['18 - Scaling Reducers with context'] = (props) => <ScalingReducers {...props} />
+Components['19 - Introducing useEffect'] = (props) => <IntroducingUseEffect {...props} />
 
 export default Components

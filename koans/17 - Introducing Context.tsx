@@ -5,7 +5,7 @@ import {createContext, useContext, useState} from "react";
     checked if changes the button to green (#00ff00)
  */
 
-const ThemeContext = createContext<any>(null)
+
 const ThemeableButton = ({label}) => {
     return <button>
         {label}

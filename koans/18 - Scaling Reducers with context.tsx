@@ -1,16 +1,35 @@
-import {ReducerState, useReducer, useState} from "react";
+import {createContext, ReducerState, useContext, useReducer, useState} from "react";
 
 /*
-    Task: Implement the logic in the reducer to handle creating, updating, and deleting of physicists
-    and dispatch the actions from the Physicist component
+    Task: In the same manner as Koan 16, use the logic in the reducer to handle creating, updating
+    and deleting of physicists but this time do not pass the dispatch function instead use the context
  */
 
 const physicistsReducer = (state, action) => {
-    //TODO: implement this implementation
-    return state
+    switch(action.type) {
+        case 'create': {
+            return [...state, {...action.data}]
+        }
+        case 'update': {
+            return state.map((s) => {
+                if (s.id === action.data.id) {
+                    return action.data;
+                } else {
+                    return s;
+                }
+            });
+        }
+        case 'delete': {
+            return state.filter((t) => t.id !== action.data.id)
+        }
+        default: {
+            throw Error('Unknown action: ' + action.type);
+        }
+    }
 }
 
 const Physicist = ({physicist}) => {
+    const dispatch = null as any
     const [isEdit, setIsEdit] = useState(false)
     const [name, setName] = useState<String>(physicist.name)
 
@@ -37,8 +56,8 @@ const Physicist = ({physicist}) => {
 
 const PhysicistList = ({physicists}) => {
     return physicists?.map(p =>
-            <Physicist key={p.id} physicist={p} />
-        )
+        <Physicist key={p.id} physicist={p} />
+    )
 }
 
 const initialState = [
