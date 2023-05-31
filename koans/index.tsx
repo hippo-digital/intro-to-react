@@ -13,6 +13,8 @@ import HandlingForms from "./12 - Handling forms"
 import HandlingForms2 from "./13 - Handling forms 2"
 import SharingState from "./14 - Sharing state"
 import PositionState from "./15 - Understanding Position and State"
+import IntroducingReducers from "./16 - Introducing Reducers"
+import IntroducingContext from "./17 - Introducing Context"
 
 let Components = {}
 
@@ -31,6 +33,7 @@ Components['12 - Handling forms'] = (props) => <HandlingForms {...props} />
 Components['13 - Handling forms 2'] = (props) => <HandlingForms2 {...props} />
 Components['14 - Sharing state'] = (props) => <SharingState {...props} />
 Components['15 - Understanding Position and State'] = (props) => <PositionState {...props} />
-
+Components['16 - Introducing Reducers'] = (props) => <IntroducingReducers {...props} />
+Components['17 - Introducing Context'] = (props) => <IntroducingContext {...props} />
 
 export default Components

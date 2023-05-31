@@ -1,6 +1,6 @@
 
 /*
-    TASK: Make this component output hello world
+    TASK: Make this component output, Hello World!
 */
 
 const Page = () => {
