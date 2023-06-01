@@ -1,10 +1,12 @@
 import {promisify} from "node:util";
+import Os from 'os';
 const exec = promisify(require('node:child_process').exec);
 
 export const POST = async (request: Request, { params }: { params: { test: string }; }) => {
     const testToRun = params.test
     try {
-        const output = await exec(`NODE_ENV=test jest '${testToRun}.test.tsx' --noStackTrace`)
+        const envSet = Os.platform() == "win32" ? "set" : "export"
+        const output = await exec(`${envSet} NODE_ENV=test jest '${testToRun}.test.tsx' --noStackTrace`)
         return new Response(JSON.stringify({success:true, message:output.stdout}), {
             status: 200
         });
