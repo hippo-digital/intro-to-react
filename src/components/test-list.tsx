@@ -5,16 +5,16 @@ import styles from "./test-list.module.scss"
 import TestRunner from "@/components/test-runner";
 
 const getKoanFiles = async () : Promise<string[]> => {
-    const basePath = "koans/"
+    const basePath = "koans" + path.sep
     const getAllFiles = (dirPath, arrayOfFiles=null) => {
         let files = fs.readdirSync(dirPath)
         arrayOfFiles = arrayOfFiles || []
 
         files.forEach(function (file) {
-            if (fs.statSync(dirPath + "/" + file).isDirectory()) {
-                arrayOfFiles = getAllFiles(dirPath + "/" + file, arrayOfFiles)
+            if (fs.statSync(dirPath + path.sep + file).isDirectory()) {
+                arrayOfFiles = getAllFiles(dirPath + path.sep + file, arrayOfFiles)
             } else if(file.endsWith(".tsx") && file !== "index.tsx") {
-                arrayOfFiles.push(path.join(dirPath, "/", file))
+                arrayOfFiles.push(path.join(dirPath, path.sep, file))
             }
         })
 
